@@ -15,7 +15,7 @@
     }
  
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
- 
+    html { scroll-behavior: smooth; }
     body {
       background-color: var(--cream);
       color: var(--text);
@@ -28,9 +28,8 @@
     header {
       background-color: var(--forest);
       color: var(--cream);
-      padding: 60px 40px 50px;
+      padding: 60px 40px 20px;
       text-align: center;
-      border-bottom: 5px solid var(--gold);
     }
  
     header h1 {
@@ -209,6 +208,21 @@
       color: #888;
       border-top: 1px solid var(--light);
     }
+    .link-bar {
+      position: sticky;
+      top: 0;
+      text-align: center;
+      padding: 10px 16px;
+      background: var(--forest);
+      color: #f1f1f1;
+      border-bottom: 5px solid var(--gold);
+    }
+    .link-bar a {
+      color: #f1f1f1;
+      font-weight: 600;
+      font-size: 1.1rem;
+      letter-spacing: 0.03em;
+    }
   </style>
 </head>
 <body>
@@ -218,7 +232,21 @@
     <p class="tagline">Friendly, patient tech help</p>
   </header>
  
-  <div class="contact-bar">
+
+
+  <div class = "link-bar">
+    <a href="#contact">Contact</a>
+    <span class="dot">|</span>
+    <a href="#services">Services</a>
+    <span class="dot">|</span>
+    <a href="#about">About</a>
+    <span class="dot">|</span>
+    <a href="#location">Location</a>
+    <span class="dot">|</span>
+    <a href="#pricing">Pricing</a>
+  </div>
+
+  <div class="contact-bar" id="contact">
     <a href="tel:+13025027076">Call at: (302) 502-7076</a>
     <span class="dot">|</span>
     <a href="mailto:jack@jackfixesit.com">Email at: jack@jackfixesit.com</a>
@@ -238,11 +266,10 @@
         <section class="contact-card">
                 Call me at (302) 502-7076<br> 
                 <i>or</i> 
-                <br>Email me at jackfrancissutton@gmail.com
-                <br> and book an appointment today!
+                <br>Email me at jack@jackfixesit.com
+                <br id="services"> and book an appointment today!
         </section>
     </section>
-
 
     <section class="services">
       <h2>Services</h2>
@@ -308,15 +335,54 @@
         </div>
  
       </div>
+      <div>
         <br>
-        <section class="intro">
-            <p>Dont see what your looking for? Give me a call and we can work through it!</p>
+        <section class="intro" >
+            <p  id = "about">Dont see what your looking for? Give me a call and we can work through it!</p>
         </section>
-        
- 
+      </div>
+
+      <div class = "intro">
+        <div class = "service-card">
+          <section>
+            <h2>About</h2>
+            <p>
+              I am a recently graudated computer science student, passionate about helping others. <br/><br/>
+              I have experience working through all kinds of tech problems. I know first hand how frustrating these problems can be. It's been my mission to make technology easier to use for everyone. <br/><br/>
+              I hope to solve any tech issues you have in a kind, patient, and understandable way.<br/> Whatever the problem, I'm sure I can help fix it.<br/>
+            </p>
+          </section>
+        </div>
+        <br/>
+        <br id = "location"/>
+        <div class = "service-card">
+        <section >
+          <h2>Location</h2>
+          <p>
+            I am based in Wilmington, Delaware and serve the surrounding areas. <br/>
+            I will come to you, anywhere in New Castle County, or the Greater Philadelphia area. <br/>
+            All appointments are in person.<br/>
+          </p>
+        </section>
+        </div>
+        <br/>
+        <br/>
+        <div class = "service-card">
+        <section id = "pricing">
+          <h2>Pricing</h2>
+          <p>
+            I charge a flat rate of $35 for a visit - whatever the problem. <br/>
+            An additional $25 is charged per hour after the first hour. <br/>
+            If you give a call, I can estimate how long your issue will take to solve; most problems are solved within an hour or less! <br/>
+          </p>
+        </section>
+        </div>
+      </div>
+
       <div class="promise">
         <p>No technical jargon, no rushing. Just honest help from someone who cares.</p>
       </div>
+      
  
     </section>
  
