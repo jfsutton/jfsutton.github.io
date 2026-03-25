@@ -174,6 +174,26 @@
       color: var(--gold);
       font-weight: 600;
     }
+
+    .service-card-with-image {
+      background: #fff;
+      border: 1px solid var(--light);
+      border-top: 4px solid var(--forest);
+      padding: 28px 24px;
+      border-radius: 2px;
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+    }
+
+    .service-card-image {
+      flex-shrink: 0;
+      width: 200px;
+      height: 300px;
+      object-fit: cover;
+      align-self: center;
+      border-radius: 2px;
+    }
  
     /* ── PROMISE STRIP ── */
     .promise {
@@ -217,7 +237,7 @@
       color: #f1f1f1;
       border-bottom: 5px solid var(--gold);
     }
-    .link-bar a {
+    .link-bar a, .promise a {
       color: #f1f1f1;
       font-weight: 600;
       font-size: 1.1rem;
@@ -343,11 +363,12 @@
       </div>
 
       <div class = "intro">
-        <div class = "service-card">
+        <div class="service-card-with-image">
+          <img src="self.png" alt="Profile picture" class="service-card-image">
           <section>
             <h2>About</h2>
             <p>
-              I am a recently graudated computer science student, passionate about helping others. <br/><br/>
+              I am a recently graduated computer science student, passionate about helping others. <br/><br/>
               I have experience working through all kinds of tech problems. I know first hand how frustrating these problems can be. It's been my mission to make technology easier to use for everyone. <br/><br/>
               I hope to solve any tech issues you have in a kind, patient, and understandable way.<br/> Whatever the problem, I'm sure I can help fix it.<br/>
             </p>
